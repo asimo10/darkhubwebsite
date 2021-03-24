@@ -37,7 +37,7 @@ a {
 
 #title {
     font-size: 57px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 #code {
@@ -45,6 +45,9 @@ a {
     border: 2px solid #ffffff;
     border-radius: 5px;
     width: 585px;
+}
+
+#code[pointy] {
     cursor: pointer;
 }
 
