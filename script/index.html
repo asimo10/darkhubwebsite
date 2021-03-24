@@ -15,12 +15,30 @@
     </a>
     <hr>
     <div style="display: flex;justify-content: center;">
-        <pre id="code"><font size="4">loadstring(game:HttpGet(("https://darkhub.xyz/script"), true))()</font></pre>
+        <pre id="code" pointy><span style="font-size: 16px;"><span style="color: red;">loadstring</span>(game:HttpGet((<span style="color: teal;">"https://darkhub.xyz/script"</span>), <span style="color: teal;">true</span>))()</span></pre>
     </div>
     <div style="display: flex;justify-content: center;">Click on the script to copy to clipboard
     </div>
+    <div>Supported Games:<br><pre id="code">- Strucid: 2377868063
+      - Horrific Housing: 263761432
+      - Arsenal: 286090429
+      - Phantom Forces: 292439477
+      - Jailbreak: 606849621
+      - Bad Business: 3233893879
+      - Big Paintball: 3527629287
+      - Ace Of Spadez: 2555870920
+      - No Scope Sniping: 5081773298</pre></div>
+      <div>Supported Script Utilities:<br><pre id="code">- DarkHub.exe: All Games + Exclusive Games
+        - Synapse : All Games
+        - Krnl : All Games
+        - Fluxus : All Games
+        - Sentinel : Not All Games
+        - Furk : Most Games
+        - Zeus : Most Games
+        - Oxygen U : Most Games
+        - Script-Ware V2: Most Games</pre></div>
     <script>
-      const span = document.querySelector("font");
+      const span = document.querySelector("pre");
       span.onclick = function() {
         document.execCommand("copy");
       }
