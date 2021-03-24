@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Hub | Script</title>
+    <link rel="stylesheet" href="../styles.css" type="text/css" media="all" />
+</head>
+<body>
+    <hr space>
+    <a id="header" href="../index.html" big>
+        <img width="150" height="125" src="https://images02.nicepage.io/949332219b3670b7f6e4883d/3c3435c797f55ad89c8f56fa/LogoMakr-78mXAl.png?version=">
+    </a>
+    <a id="header" style="margin-left: 25px; margin-right: 25px;" href="#">Script
+    </a>
+    <a id="header" href="https://discord.gg/darkhub">Discord
+    </a>
+    <hr>
+    <div style="display: flex;justify-content: center;">
+        <pre id="code"><font size="4">loadstring(game:HttpGet(("https://darkhub.xyz/script"), true))()</font></pre>
+    </div>
+    <div style="display: flex;justify-content: center;">Click on the script to copy to clipboard
+    </div>
+    <script>
+      const span = document.querySelector("font");
+      span.onclick = function() {
+        document.execCommand("copy");
+      }
+      span.addEventListener("copy", function(event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+          event.clipboardData.setData("text/plain", span.textContent);
+          console.log(event.clipboardData.getData("text"));
+          alert("Script copied to clipboard");
+        }
+      });
+    </script>
+  </body>
+</html>
