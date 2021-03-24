@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #333;
+    color: #ffffff;
+    font-weight: 100;
+    max-width: 50em;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+
+div:focus {
+    outline: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #b7b7b7;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #595959;
+}
+
+#title {
+    font-size: 57px;
+    padding-top: 30px;
+}
+
+#code {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 585px;
+    cursor: pointer;
+}
+
+#content {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#content[smol] {
+    font-size: 20px;
+    font-weight: 10;
+}
+
+#title[contenteditable=true]:empty::before {
+    content: attr(placeholder);
+    color: #ffffff;
+}
+
+#title[medium] {
+    font-size: 38px;
+}
+
+#title[extramedium] {
+    font-size: 27px;
+}
+
+#header {
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+#header[save] {
+    font-size: 23px;
+    border-style: outset;
+    border-color: #7f7f7f;
+}
+
+#header[big] {
+    font-size: 30px;
+    color: #4c4c4c;
+}
+
+#header[big]:hover {
+    color: #a7a7a7;
+}
+
+#header:hover {
+    color: #a7a7a7;
+}
+
+hr[space] {
+    border-top: 0px solid white;
+}
